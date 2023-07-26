@@ -4,6 +4,11 @@ body, h1, p, ul, li {
     padding: 0;
 }
 
+/* Remove underline from anchor links */
+.custom-link:hover {
+  text-decoration: none;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8; /* Optional: Add a light background color for the page */
@@ -22,7 +27,7 @@ body {
     width: 100%;
     height: 4rem;
     /* background-color: #333; */
-    background-color: rgba(33, 33, 33, 0.9);
+    background-color: rgba(33, 33, 33, 0.6);
     z-index: 999; /* To ensure the navbar stays above other content */
     display: flex;
     justify-content: center; /* Center the navbar elements horizontally */
@@ -65,7 +70,7 @@ body {
 }
 
 .hero-container, .container{
-    background-color: rgba(50, 50, 50, 0.8); /* Dark grey with transparency */
+    background-color: rgba(33, 33, 33, 0.7); /* Dark grey with transparency */
     padding: 1rem;
     max-width: 600px;
     margin: 0 auto; /* Center the container horizontally */
@@ -131,11 +136,10 @@ body {
 }
 
 /* CSS for the #resume section */
-#resume {
-    padding: 1rem;
-    background-color: rgba(175, 238, 238, 0.535); /* Optional: Add a light background color for the page */
-    background-color: white; /* Optional: Add a light background color for the page */
 
+#resume {
+    padding: 4rem 1rem 1rem 0rem;
+    background-color: white; /* Optional: Add a light background color for the page */
 }
 
 #resume h3 {
@@ -180,13 +184,17 @@ body {
 }
 /* CSS for the #projects section */
 
+#projects-head {
+    height: 4rem;
+}
+
+.projects-title {
+    margin-bottom: 1rem;
+}
 #projects {
     background-color: rgb(11, 11, 11);
     color: white;
     text-align: center;
-}
-
-#projects{
     padding: 1rem 0rem;
 }
 
