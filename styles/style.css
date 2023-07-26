@@ -12,6 +12,8 @@ body, h1, p, ul, li {
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8; /* Optional: Add a light background color for the page */
+    /* flex-direction: column; */
+
 }
 
 /* Utilities */
@@ -138,7 +140,7 @@ body {
 /* CSS for the #resume section */
 
 #resume {
-    padding: 4rem 1rem 1rem 0rem;
+    padding: 4rem 1rem 1rem 1rem;
     background-color: white; /* Optional: Add a light background color for the page */
 }
 
@@ -293,6 +295,10 @@ body {
     border: none;
 }
 
+#copyright {
+    text-align: center;
+}
+
 @media screen and (max-width: 576px) {
     .hero-container {
         max-width: 90%; /* Reduce the max-width on smaller viewports */
@@ -340,7 +346,5 @@ body {
 
     .skill-cat:first-child{
         margin-right: 4rem;
-    }
-
-    
+    }    
 }
