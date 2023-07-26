@@ -21,36 +21,17 @@
     
     <section id="hero">
         <!-- Your About content goes here -->
-    <div class="hero-container">
+    <div class="hero-container d-flex flex-column flex-sm-row justify-content-sm-center">
         <div> <!-- Image column on top for small screens, and centered for small screens -->
             <img class="me" src="media/images/me.jpeg" alt="me">
         </div>
-        <h1 class="hero-heading">Hi, I'm Mathew Kouch</h1>
-        <p class="hero-paragraph">I'm an Electrical Engineering and Finance Graduate from Monash.</p>
-        <p>In my spare time, I like to hike, cook fusion dishes, and read sci-fi novels.</p>
+        <div class="d-flex flex-column justify-content-center">
+            <h1 class="hero-heading">Hi, I'm Mathew Kouch</h1>
+            <p class="hero-paragraph">I'm an Electrical Engineering and <br> Finance Graduate from Monash.</p>
+            <p>In my spare time I love to <br>hike, code, and read sci-fi novels.</p>
+        </div>
     </div>
     </section>
-    
-    <!-- <section id="about">
-        
-        <div > 
-            <div class="about-card">
-                    <h2>About me</h2>
-                    <p>I am a sdfsdfsdfdsf sdfsdfsdfdsfsdfsdf</p>
-                <div>
-                    <ul class="about-list">
-                        <li><strong>Location:</strong> Clayton, Victoria</li>
-                        <li><strong>University:</strong> Monash University, Victoria</li>
-                        <li><strong>Education:</strong> Bachelor of Engineering (Honours)<br>
-                            Bachelor of Commerce (Finance)
-                        </li>
-                        <li><strong>Interest:</strong> Hiking, Cooking, Reading</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section> 
--->
 
     <section id="resume" class="resume">
         <h3>Education</h3>
@@ -77,7 +58,7 @@
         <hr>
         <div class="skills d-flex flex-column">
             <h3>Skills</h3>
-            <div class="skill-lists d-flex flex-wrap mx-auto">
+            <div class="skill-lists d-flex mx-auto">
 
                 <div class="skill-cat">
                     <p class="skill-cat-heading"><strong>AI</strong></p>
@@ -110,7 +91,8 @@
 
     <section id="projects" class="d-flex flex-column justify-content-center" >
         <h2>Projects</h2>
-        <div class="project-cards d-flex flex-column flex-md-row flex-wrap justify-content-center mx-auto">
+        <div class="project-cards d-flex flex-row flex-wrap justify-content-center mx-auto">
+
             <div class="project-card project-1 p-3 m-3">
                 <h2 class="project-title">A.I Skin Cancer Classifier</h2>
                 <div class="overlay">
