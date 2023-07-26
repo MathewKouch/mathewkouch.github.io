@@ -254,7 +254,7 @@ body {
 
 
 /* Media Query to make hero container shrink on smaller viewports */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
 
     .hero-container {
         max-width: 90%; /* Reduce the max-width on smaller viewports */
@@ -271,7 +271,7 @@ body {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
 
     .skill-list {
         columns: 2;
