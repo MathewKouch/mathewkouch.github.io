@@ -84,7 +84,6 @@ body {
     line-height: 1.6;
 }
 
-
 #about {
     display: flex;
     flex-direction: column;
@@ -160,16 +159,16 @@ body {
 }
 
 .skill-list {
-    columns: 2;
-}
-.skill-list li {
-    margin-left: 1rem;
+    columns: 1;
 }
 
 .skill-cat:first-child{
     margin-right: 4rem;
 }
 
+.skill-list li {
+    margin-left: 1rem;
+}
 .skill-cat li {
     list-style: none;
 }
@@ -272,8 +271,16 @@ body {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
 
+    .skill-list {
+        columns: 2;
+    }
+    
+    .skill-cat:first-child{
+        margin-right: 4rem;
+    }
+    
     .project-card:hover .overlay {
         display: flex; /* Show the overlay when hovering on the project card */
     }
