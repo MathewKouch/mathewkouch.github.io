@@ -271,7 +271,7 @@ body {
     }
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 768px) {
 
     .skill-list {
         columns: 2;
