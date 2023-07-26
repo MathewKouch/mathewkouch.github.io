@@ -1,0 +1,307 @@
+/* Reset margins and padding on all elements */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8; /* Optional: Add a light background color for the page */
+}
+
+/* Utilities */
+.underline {
+    text-decoration: underline;
+    text-decoration-color: orangered;
+}
+.my-navbar {
+    /* Your navbar styles */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    /* background-color: #333; */
+    background-color: rgba(33, 33, 33, 0.9);
+    z-index: 999; /* To ensure the navbar stays above other content */
+    display: flex;
+    justify-content: center; /* Center the navbar elements horizontally */
+    align-items: center;
+    margin-bottom: 0; /* Remove default margin from the navbar */
+    
+}
+.my-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.my-navbar li {
+    margin: 0 10px;
+}
+
+.my-navbar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+}
+/* Your other styles */
+
+/* Hero */
+
+#hero {
+    /* Set the background image */
+    background-image: url("../media/images/hero-bg.jpeg");
+    /* Adjust background positioning and size */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Set the height of the hero section */
+    height: 100vh; /* You can adjust the height as needed */
+    /* Add other styles if required */
+    display: flex;
+    align-items: center; /* Center the hero-container vertically */
+}
+
+.hero-container, .container{
+    background-color: rgba(50, 50, 50, 0.8); /* Dark grey with transparency */
+    padding: 1rem;
+    max-width: 600px;
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center;
+    border-radius: 12px;
+    color: #fff; /* White text */
+}
+
+.hero-heading {
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.hero-paragraph {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the profile image on the left */
+.me {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 1rem;
+    align-self: center; 
+}
+
+/* Style the "About" card on the right */
+.about-card {
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.about-card h2 {
+    margin-bottom: 10px;
+}
+
+/* Style the two-column list */
+.about-list {
+    columns: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-list li {
+    margin-bottom: 1rem;
+}
+
+.about-list li:first-child{
+    margin-top: 1rem;
+}
+
+/* CSS for the #resume section */
+#resume {
+    padding: 1rem;
+    background-color: rgba(175, 238, 238, 0.535); /* Optional: Add a light background color for the page */
+    background-color: white; /* Optional: Add a light background color for the page */
+
+}
+
+#resume h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.resume p {
+    text-align: center;
+    word-wrap: break-word;
+}
+
+/* Style the horizontal rule */
+#resume hr {
+    margin: 30px; /* Add some margin to give spacing around the hr */
+    border: none;
+    border-top: 2px solid rgb(200, 200, 200); /* Set the color and thickness of the hr line */
+}
+
+.skill-lists {
+    max-width: 768px;      
+}
+
+.skill-list {
+    columns: 2;
+}
+.skill-list li {
+    margin-left: 1rem;
+}
+
+.skill-cat:first-child{
+    margin-right: 4rem;
+}
+
+.skill-cat li {
+    list-style: none;
+}
+
+.skill-cat-heading {
+    margin-left: 0; /* Align the text to the left on small screens */
+    margin-bottom: 0;
+}
+/* CSS for the #projects section */
+
+#projects {
+    background-color: rgb(11, 11, 11);
+    color: white;
+    text-align: center;
+}
+
+#projects{
+    padding: 1rem 0rem;
+}
+
+.project-cards {
+    max-width: 768px;
+}
+.project-card {
+    position: relative; /* Needed to position the overlay */
+    background-color: #f0f0f0;
+    height: 256px;
+    width: 256px;
+    border-radius: 12px;
+    color: black;
+
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+
+    transition: transform 0.3s ease; /* CSS transition to animate the transform property */
+    
+}
+
+.project-card:hover {
+    transform: scale(1.1); /* Scale up the card on hover */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 64, 0.8); /* Dark overlay with transparency */
+    border-radius: 12px;
+    display: none; /* Hide the overlay by default */
+    justify-content: center;
+    align-items: center;
+}
+
+
+.project-name {
+    color: white; /* Text color for the project name */
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+/* Restyle the contact page */
+#contact {
+    background-color: white;
+    color: black;
+    padding: 40px; /* Add some padding to space the content from the edges */
+    max-width: 768px;
+}
+
+/* Optionally, restyle the form elements */
+.form-control {
+    background-color: #f5f5f5; /* Light gray background for form inputs */
+    color: black;
+    border: 1px solid #ccc; /* Add a border for form inputs */
+}
+
+.btn-primary {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+
+/* Media Query to make hero container shrink on smaller viewports */
+@media screen and (max-width: 768px) {
+
+    .hero-container {
+        max-width: 90%; /* Reduce the max-width on smaller viewports */
+        margin-top: 30px; /* Add a top margin on smaller viewports */
+    }
+
+    .project-cards {
+        flex-direction: column;
+    }
+
+    .project-card{
+        height: 128px;
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .project-card:hover .overlay {
+        display: flex; /* Show the overlay when hovering on the project card */
+    }
+
+    .project-1 {
+        background-image: url("../media/project/skin_lesion/transfuser.png");
+        background-size: contain;
+    }
+
+    .project-2 {
+        background-image: url("../media/project/watches/fake_watches.gif");
+        background-size: contain;
+    }
+
+    .project-3 {
+        background-image: url("../media/project/robot/robot.gif");
+        background-size: auto;
+    }
+
+    .project-4 {
+        background-image: url("../media/project/game/world_invasion_gameplay.gif");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;    
+    }
+    .project-title {
+        visibility: hidden;
+        text-align: center;
+        justify-content: center;
+    }
+}

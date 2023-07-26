@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+</head>
+<body>
+    <div class="my-navbar">
+        <ul>
+            <li><a href="#hero">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    
+    <section id="hero">
+        <!-- Your About content goes here -->
+    <div class="hero-container">
+        <div> <!-- Image column on top for small screens, and centered for small screens -->
+            <img class="me" src="../media/images/me.jpeg" alt="me">
+        </div>
+        <h1 class="hero-heading">Hi, I'm Mathew Kouch</h1>
+        <p class="hero-paragraph">I'm an Electrical Engineering and Finance Graduate from Monash.</p>
+        <p>In my spare time, I like to hike, cook fusion dishes, and read sci-fi novels.</p>
+    </div>
+    </section>
+    
+    <!-- <section id="about">
+        
+        <div > 
+            <div class="about-card">
+                    <h2>About me</h2>
+                    <p>I am a sdfsdfsdfdsf sdfsdfsdfdsfsdfsdf</p>
+                <div>
+                    <ul class="about-list">
+                        <li><strong>Location:</strong> Clayton, Victoria</li>
+                        <li><strong>University:</strong> Monash University, Victoria</li>
+                        <li><strong>Education:</strong> Bachelor of Engineering (Honours)<br>
+                            Bachelor of Commerce (Finance)
+                        </li>
+                        <li><strong>Interest:</strong> Hiking, Cooking, Reading</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> 
+-->
+
+    <section id="resume" class="resume">
+        <h3>Education</h3>
+        
+        <p><em>Monash University</em><br>
+            Bachelor of Engineering (Honours) in <br>Electrical and Computer Systems<br>
+            & Bachelor of Commerece
+        </p>
+        <hr>
+    
+        <h3>Experience</h3>
+            <p><strong>Undergraduate Student Researcher</strong><br>
+                <em>Monash Medical A.I Group</em> <br>
+            Researched and developed medical AI models for <br>early diagnosis and classification of skin cancer.</p>
+            
+
+            <p><strong>Lighting Assembly Technician</strong><br>
+                <em>Aglo Systems</em> <br>
+            Designed and assembled products to lighten up the <br> built environments of businesses and residential homes. </p>
+
+            <p><strong>eCommerce Assistant</strong><br>
+                <em>Save the Children Australia</em><br>
+            Volunteered in operating the charity's online store, <br>generating funds to combat child abuse and hunger.</p>
+        <hr>
+        <div class="skills d-flex flex-column">
+            <h3>Skills</h3>
+            <div class="skill-lists d-flex flex-wrap mx-auto">
+
+                <div class="skill-cat">
+                    <p class="skill-cat-heading"><strong>AI</strong></p>
+                    <ul class="skill-list">
+                        <li></li>
+                        <li>Python</li>
+                        <li>PyTorch</li>
+                        <li>CUDA</li>
+                        <li>Pandas</li>
+                        <li>Sklearn</li>
+                        <li>Selenium</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-cat">
+                    <p class="skill-cat-heading"><strong>Web</strong></p>
+                    <ul class="skill-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Django</li>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="projects" class="d-flex flex-column justify-content-center" >
+        <h2>Projects</h2>
+        <div class="project-cards d-flex flex-column flex-md-row flex-wrap justify-content-center mx-auto">
+            <div class="project-card project-1 p-3 m-3">
+                <h2 class="project-title">A.I Skin Cancer Classifier</h2>
+                <div class="overlay">
+                    <h2 class="project-name">A.I Skin Cancer Classifier</h2>
+                </div>
+            </div>
+            <div class="project-card project-2 p-3 m-3">
+                <h2 class="project-title">DCGAN Watches</h2>
+                <div class="overlay">
+                    <h2 class="project-name">DCGAN Watches</h2>
+                </div>
+            </div>
+            <div class="project-card project-3 p-3 m-3 ">
+                <h2 class="project-title">Autonomous Robot</h2>
+                <div class="overlay">
+                    <h2 class="project-name">Autonomous Robot</h2>
+                </div>
+            </div>
+            <div class="project-card project-4 p-3 m-3">
+                <h2 class="project-title">Alien Invasion Game</h2>
+                <div class="overlay">
+                    <h2 class="project-name">Alien Invasion Game</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h2>Contact Me</h2>
+                <form action="mailto:mathew.kouch@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- Add the Bootstrap JS and jQuery links at the end of the body -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script></body>
+</html>
