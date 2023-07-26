@@ -84,6 +84,7 @@ body {
     line-height: 1.6;
 }
 
+
 #about {
     display: flex;
     flex-direction: column;
@@ -161,14 +162,14 @@ body {
 .skill-list {
     columns: 1;
 }
-
-.skill-cat:first-child{
-    margin-right: 4rem;
-}
-
 .skill-list li {
     margin-left: 1rem;
 }
+
+.skill-cat:first-child{
+    margin-right: 6rem;
+}
+
 .skill-cat li {
     list-style: none;
 }
@@ -195,8 +196,8 @@ body {
 .project-card {
     position: relative; /* Needed to position the overlay */
     background-color: #f0f0f0;
-    height: 256px;
-    width: 256px;
+    height: 40vw;
+    width: 40vw;
     border-radius: 12px;
     color: black;
 
@@ -207,6 +208,7 @@ body {
     transition: transform 0.3s ease; /* CSS transition to animate the transform property */
     
 }
+
 
 .project-card:hover {
     transform: scale(1.1); /* Scale up the card on hover */
@@ -223,6 +225,37 @@ body {
     display: none; /* Hide the overlay by default */
     justify-content: center;
     align-items: center;
+}
+
+.project-card:hover .overlay {
+    display: flex; /* Show the overlay when hovering on the project card */
+}
+
+.project-1 {
+    background-image: url("../media/project/skin_lesion/transfuser.png");
+    background-size: contain;
+}
+
+.project-2 {
+    background-image: url("../media/project/watches/fake_watches.gif");
+    background-size: contain;
+}
+
+.project-3 {
+    background-image: url("../media/project/robot/robot.gif");
+    background-size: auto;
+}
+
+.project-4 {
+    background-image: url("../media/project/game/world_invasion_gameplay.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+.project-title {
+    visibility: hidden;
+    text-align: center;
+    justify-content: center;
 }
 
 
@@ -252,13 +285,40 @@ body {
     border: none;
 }
 
-
-/* Media Query to make hero container shrink on smaller viewports */
 @media screen and (max-width: 576px) {
-
     .hero-container {
         max-width: 90%; /* Reduce the max-width on smaller viewports */
         margin-top: 30px; /* Add a top margin on smaller viewports */
+    }
+
+    .my-navbar li {
+        margin: 0 5px;
+    }
+
+    .my-navbar li:first-child {
+        margin-left: 10px;
+    }
+
+    .my-navbar li:last-child {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+
+    .my-navbar {
+        height: 3em;
+    }
+
+    .hero-container {
+        width: 90%;
+        max-width: 768px; /* Reduce the max-width on smaller viewports */
+
+        margin-top: 45px; /* Add a top margin on smaller viewports */
+    }
+
+    .skill-list {
+        columns: 2;
     }
 
     .project-cards {
@@ -266,49 +326,13 @@ body {
     }
 
     .project-card{
-        height: 128px;
-        width: 90%;
+        height: 256px;
+        width: 256px;
     }
-}
 
-@media screen and (min-width: 576px) {
-
-    .skill-list {
-        columns: 2;
-    }
-    
     .skill-cat:first-child{
         margin-right: 4rem;
     }
+
     
-    .project-card:hover .overlay {
-        display: flex; /* Show the overlay when hovering on the project card */
-    }
-
-    .project-1 {
-        background-image: url("../media/project/skin_lesion/transfuser.png");
-        background-size: contain;
-    }
-
-    .project-2 {
-        background-image: url("../media/project/watches/fake_watches.gif");
-        background-size: contain;
-    }
-
-    .project-3 {
-        background-image: url("../media/project/robot/robot.gif");
-        background-size: auto;
-    }
-
-    .project-4 {
-        background-image: url("../media/project/game/world_invasion_gameplay.gif");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;    
-    }
-    .project-title {
-        visibility: hidden;
-        text-align: center;
-        justify-content: center;
-    }
 }
