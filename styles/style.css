@@ -254,7 +254,7 @@ body {
 
 
 /* Media Query to make hero container shrink on smaller viewports */
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 768px) {
 
     .hero-container {
         max-width: 90%; /* Reduce the max-width on smaller viewports */
